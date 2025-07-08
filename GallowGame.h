@@ -1,6 +1,6 @@
 #pragma once
 // Класс для игры
-class GallowGame : private ManOnTheGallows
+class GallowGame
 {
 private:
     string wordForGame; // Секретное слово для игры
@@ -10,6 +10,15 @@ private:
     vector<char> enteredLetters; // Вектор для хранения выбора букв во время игре
     string previousWord; // Строка хранящее предыдущее секретное слово
     chrono::time_point<chrono::high_resolution_clock> startTime; // Переменная хранящее время
+    vector<string> imageGallows { // Изображение виселицы
+        {"________________\n | /          |\n |/\n |\n |\n |\n |\n |\n |\n_|______\n"},
+        {"________________\n | /          |\n |/           O\n |\n |\n |\n |\n |\n |\n_|______\n"},
+        {"________________\n | /          |\n |/           O\n |            |\n |            |\n |\n |\n |\n |\n_|______\n"},
+        {"________________\n | /          |\n |/           O\n |           /|\n |            |\n |\n |\n |\n |\n_|______\n"},
+        {"________________\n | /          |\n |/           O\n |           /|\\\n |            |\n |\n |\n |\n |\n_|______\n"},
+        {"________________\n | /          |\n |/           O\n |           /|\\\n |            |\n |           /\n |\n |\n |\n_|______\n"},
+        {"________________\n | /          |\n |/           O\n |           /|\\\n |            |\n |           / \\\n |\n |\n |\n_|______\n"}
+    };
 public:
     GallowGame() : wordForGame(""), guessedWord(""), attempts(0) {}
 

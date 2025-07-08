@@ -128,7 +128,6 @@
     <ClCompile Include="GallowGame.cpp" />
     <ClCompile Include="Gallows Exam.cpp" />
     <ClCompile Include="GameControl.cpp" />
-    <ClCompile Include="ManOnTheGallows.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CaesarCipher.h" />
@@ -137,7 +136,6 @@
     <ClInclude Include="file_open_error.h" />
     <ClInclude Include="GallowGame.h" />
     <ClInclude Include="GameControl.h" />
-    <ClInclude Include="ManOnTheGallows.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

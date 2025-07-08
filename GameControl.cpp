@@ -9,7 +9,6 @@
 #include "file_create_error.h"
 #include "CaesarCipher.h"
 #include "FileManager.h"
-#include "ManOnTheGallows.h"
 #include "GallowGame.h"
 #include "GameControl.h"
 using namespace std;

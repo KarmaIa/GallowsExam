@@ -9,7 +9,6 @@
 #include "file_create_error.h"
 #include "CaesarCipher.h"
 #include "FileManager.h"
-#include "ManOnTheGallows.h"
 #include "GallowGame.h"
 using namespace std;
 
@@ -47,7 +46,7 @@ void GallowGame::showRules()
 // Вывод на экран текущего состояния игры
 void GallowGame::displayGameStatus() const
 {
-    getImageGallows(6 - attempts);
+    cout << imageGallows[6 - attempts] << endl;
     cout << "Слово: " << guessedWord << endl;
     cout << "Попыток осталось: " << attempts << endl;
     cout << "Введёные буквы: ";
@@ -111,7 +110,7 @@ void GallowGame::gameOver()
     auto endTime = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::seconds>(endTime - startTime);
 
-    getImageGallows(6 - attempts);
+    cout << imageGallows[6 - attempts] << endl;
     cout << "Игра окончена!" << endl;
     if (guessedWord == wordForGame)
     {
